@@ -3,9 +3,9 @@ merge-yml
 
 Merge multiple YML files into a single file, optionnaly writing the result in a destination file
 
-This code is largely inspired from Jonathan Cobb "merge-yml" module here.
+This code is largely inspired from [Jonathan Cobb "merge-yml" module](https://github.com/cobbzilla/merge-yml).
 
-(c) Copyright 2013 Olivier Revial.
+(c) Copyright 2017 Olivier Revial.
 This code is available under the Apache License, version 2: http://www.apache.org/licenses/LICENSE-2.0.html
 
 ## Build

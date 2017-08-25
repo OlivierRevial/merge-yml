@@ -21,20 +21,6 @@ This code is available under the Apache License, version 2: http://www.apache.or
     </licenses>
 
     <dependencies>
-
-        <!-- Logging -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.7.10</version>
-        </dependency>
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>jcl-over-slf4j</artifactId>
-            <version>1.7.10</version>
-            <scope>runtime</scope>
-        </dependency>
-
         <!-- YAML config parsing -->
         <dependency>
             <groupId>org.yaml</groupId>
@@ -94,7 +80,7 @@ This code is available under the Apache License, version 2: http://www.apache.or
                                 <configuration>
                                     <transformers>
                                         <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                            <mainClass>org.cobbzilla.util.yml.main.MergeYml</mainClass>
+                                            <mainClass>org.cobbzilla.util.yml.MergeYml</mainClass>
                                         </transformer>
                                     </transformers>
                                     <!-- Exclude signed jars to avoid errors

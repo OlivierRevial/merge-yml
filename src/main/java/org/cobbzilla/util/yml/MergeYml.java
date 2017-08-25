@@ -1,6 +1,4 @@
-package org.cobbzilla.util.yml.main;
-
-import org.cobbzilla.util.yml.YmlMerger;
+package org.cobbzilla.util.yml;
 
 /**
  * (c) Copyright 2013 Jonathan Cobb
@@ -9,7 +7,8 @@ import org.cobbzilla.util.yml.YmlMerger;
 public class MergeYml {
 
     public static void main (String[] args) throws Exception {
-        System.out.println(new YmlMerger().mergeToString(args));
+        String[] sourceFiles = {"D:/docker-compose-template.yml", "D:/docker-compose-add.yml"};
+        String destFile = "D:/docker-compose-merged.yml";
+        new YmlMerger().mergeFiles(sourceFiles, destFile);
     }
-
 }

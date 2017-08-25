@@ -1,9 +1,11 @@
 merge-yml
 =========
 
-Merge multiple YML files into a single file, and substitute for any environment variables found
+Merge multiple YML files into a single file, optionnaly writing the result in a destination file
 
-(c) Copyright 2013 Jonathan Cobb.
+This code is largely inspired from Jonathan Cobb "merge-yml" module here.
+
+(c) Copyright 2013 Olivier Revial.
 This code is available under the Apache License, version 2: http://www.apache.org/licenses/LICENSE-2.0.html
 
 ## Build
@@ -21,11 +23,3 @@ Install maven on OS X using [homebrew](http://brew.sh/): `brew install maven`
 Files are merged in order, such that files listed later will override files listed earlier.
 
 The merged result is written to stdout. Logs (for info & errors) are written to stderr.
-
-Within the YML files to be merged, you may include references to system environment variables using
-mustache-style syntax, for example:
-
-    callbackUrl: http://www.{{DEPLOY_HOST_NAME}}.example.com:8102/my_callback
-
-Then make sure you've exported the DEPLOY_HOST_NAME environment variable to whatever place you invoke
-merge-yml from.
